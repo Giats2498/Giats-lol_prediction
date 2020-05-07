@@ -31,7 +31,3 @@ def predict():
     prediction = (model.predict(x_scaled)[0]).astype(str)
     response = json.dumps({'response': prediction})
     return response, 200
-
-    
-
-#clf = svm.SVC(C=100, break_ties=False, cache_size=200,class_weight=None,coef0=0.0,decision_function_shape='ovr',degree=3,gamma=0.01,kernel='rbf',max_iter=-1, probability= True, random_state= None, shrinking= True,tol=0.001, verbose=False)
